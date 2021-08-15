@@ -1,11 +1,13 @@
+//crear variables
 var jugadas = prompt('Indique cuantas veces desea jugar en esta partida');
 var piedra = 0;
 var papel = 1;
 var tijera = 2;
 var opciones = ["piedra", "papel", "tijera"];
 var i = 1;
+// ciclo for para cantidad de juegos
 for (i = 1; i <= jugadas; i++)
-
+// do para entrar al ciclo
 do  
     { 
     var opcionUsuario = prompt("indique una opcion: \n¿piedra?: 0, \n¿papel?: 1  \n¿tijera?: 2", 1);    
@@ -13,7 +15,7 @@ do
     alert("Elegiste " + opciones[opcionUsuario]);
     alert("La Maquina eligio " + opciones[opcionMaquina]);
     i++ ;
-    
+// if comparar opcion usuario con la opcion mathrandom    
 if(opcionUsuario == piedra)
 {
     if(opcionMaquina == piedra)
@@ -59,6 +61,6 @@ else if(opcionUsuario == tijera)
         alert("EMPATE!");
     }
 }
-
+//while se repite segun el numero de jugadas indicadas
 } 
-    while (i <= jugadas) //true ()
+    while (i <= jugadas)
